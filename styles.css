@@ -190,6 +190,46 @@ h1 {
   color: var(--color-lightred);
 }
 
+.firstrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h3 {
+  margin: 5rem 0 5rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--color-darkdesaturatedblue);
+  font-family: Overpass;
+  font-weight: 600;
+}
+
+.firstrow-img {
+  width: 100%;
+  height: 100%;
+}
+
+.firstrow-text-header {
+  margin: 5rem 2rem 0 2rem;
+  font-size: 2.5rem;
+  color: var(--color-darkdesaturatedblue);
+  font-family: Overpass;
+  font-weight: 600;
+  text-align: center;
+}
+
+.classfirstrow-text-paragraph {
+  font-size: 1.8rem;
+  color: var(--color-darkgrayblue);
+  font-family: Overpass;
+  font-weight: 300;
+  margin: 2rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .navbutton {
     display: none;
@@ -204,6 +244,22 @@ h1 {
     display: none;
   }
   .intro-messagebox-header {
+    font-size: 3rem;
+  }
+
+  .firstrow-container {
+    flex-direction: row-reverse;
+  }
+
+  .firstrow-text {
+    width: 50%;
+  }
+
+  .firstrow-img-container {
+    width: 50%;
+  }
+
+  h3 {
     font-size: 3rem;
   }
 }
@@ -233,5 +289,17 @@ h1 {
   }
   .intro-messagebox-text {
     font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  .firstrow-text-header {
+    font-size: 4rem;
+  }
+
+  .classfirstrow-text-paragraph {
+    font-size: 2.4rem;
   }
 }
