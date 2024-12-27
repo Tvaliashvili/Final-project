@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --color-verylightred: hsl(13, 100%, 72%);
+  --color-lightred: hsl(353, 100%, 62%);
+  --color-darkgrayblue: hsl(237, 17%, 21%);
+  --color-darkdesaturatedblue: hsl(237, 23%, 32%);
+  --color-headertext: #faccca;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header-intro-background {
+  min-width: 25rem;
+  width: 100vw;
+  height: 40rem;
+  background-color: var(--color-verylightred);
+  border-radius: 0 0 0 6rem;
+}
+
+.header-nav-hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-family: Overpass;
+}
+
+.signup-button {
+  color: var(--color-lightred);
+  background-color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-button:hover {
+  background-color: var(--color-lightred);
+  color: white;
+}
+
+.login-button {
+  color: #ffc5c2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.user-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Overpass;
+  font-weight: 800;
+  width: 10rem;
+  height: 4.5rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.background-intro-img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.nav-button-desktop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+}
+
+.navbutton {
+  font-size: 2rem;
+  color: var(--color-headertext);
+  font-weight: 600;
+  font-family: Overpass;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbutton:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  font-family: Ubuntu;
+}
+
+.intro-background-box {
+  position: relative;
+  height: 30rem;
+  text-align: center;
+  color: white;
+}
+
+.intro-messagebox {
+  left: 50%;
+  padding: 0 2rem 0 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.intro-messagebox-header {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Overpass;
+  min-width: 28rem;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 4rem;
+}
+
+.intro-messagebox-text {
+  display: flex;
+  font-family: Overpass;
+  font-size: 1.8rem;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+
+.intro-button-box {
+  align-items: center;
+  display: flex;
+  height: 18rem;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.intro-button {
+  align-items: center;
+  border-radius: 2rem;
+  border: none;
+  display: flex;
+  font-family: Ubuntu;
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 4.5rem;
+  justify-content: center;
+  width: 12rem;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: var(--color-lightred);
+  transition: 0.3s;
+}
+
+.button2 {
+  border: 0.1rem solid white;
+  transition: 0.3s;
+}
+
+.button1:hover {
+  background-color: var(--color-lightred);
+  color: white;
+}
+
+.button2:hover {
+  background-color: white;
+  color: var(--color-lightred);
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .navbutton {
+    display: none;
+  }
+  .user-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .intro-messagebox-header {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-button-desktop {
+    margin-left: 10rem;
+  }
+  .header-nav-hamburger {
+    margin-right: 10rem;
+  }
+  .intro-messagebox-header {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav-button-desktop {
+    margin-left: 20rem;
+  }
+  .header-nav-hamburger {
+    margin-right: 20rem;
+  }
+
+  .intro-messagebox-header {
+    font-size: 5rem;
+  }
+  .intro-messagebox-text {
+    font-size: 2rem;
+  }
+}
