@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-verylightred: hsl(13, 100%, 72%);
+    --color-lightred: hsl(353, 100%, 62%);
+    --color-darkgrayblue: hsl(237, 17%, 21%);
+    --color-darkdesaturatedblue: hsl(237, 23%, 32%);
+    --color-headertext: #faccca;
+    font-size: 1.6rem;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
