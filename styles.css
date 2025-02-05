@@ -238,6 +238,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.login-land-img {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .navbutton {
     display: none;

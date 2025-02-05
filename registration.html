@@ -19,17 +19,38 @@
       <a class="back-button" href="index.html">⬅️</a>
       <form action="">
         <div class="form-box">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required />
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" required />
+          <label id="rlname" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="rname"
+            placeholder="hint: sandro"
+            required
+          />
+          <label id="rlemail" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="remail"
+            placeholder="hint: sandro@sandro.com"
+            required
+          />
+          <label id="rlpassword" for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="rpassword"
+            placeholder="hint: sandro1234"
+            required
+          />
           <div class="form-buttons">
-            <a class="user-button signup-button" href="#">Sign up</a>
+            <a onclick="Register()" class="user-button signup-button" href="#"
+              >Sign up</a
+            >
           </div>
         </div>
       </form>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
